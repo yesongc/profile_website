@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Yesong Choi</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewpoert" content="width=device-width, initial-scale=1.0" />
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-page piling->
+        <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.css" />
+        <link rel="stylesheet" type="text/css" href="./css/examples.css" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+        <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
+        
+        <script type="text/javascript">
+            var deleteLog = false;
+
+            $(document).ready(function() {
+                $('#pagepiling').pagepiling({
+                    menu: '#menu',
+                    anchors: ['home', 'about', 'skills', 'jobs','grad','contact'],
+                    sectionsColor: ['#C2AE95', '#A5A283', '#4A5F70', '#824E4E','#BF9076','#66777D'],
+                    loopTop: true,
+                    loopBottom: true
+                });
+            });
+        </script>
+
+    </head>
+
+<body>
+    <!-menu hanging on the top left->
+	<ul id="menu">
+		<li data-menuanchor="home" class="active"><a href="#page1">Home</a></li>
+		<li data-menuanchor="about"><a href="#about">About</a></li>
+        <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
+        <li data-menuanchor="jobs"><a href="#jobs">Work Experience</a></li>
+        <li data-menuanchor="grad"><a href="#grad">Graduation Timer</a></li>
+        <li data-menuanchor="contact"><a href="#contact">Contact Me</a></li>
+	</ul>
+
+    <!-to add more sections, simply copy one of the sections and update the script aobve->
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+	    	<h1>Yesong Choi</h1>
+            <p>Scroll to browse my portfolio</p>
+            <div class="footer"><i class="fa fa-chevron-down fa-3x"></i></div>
+	    </div>
+	    <div class="section" id="section2">
+            <h1>About Me</h1>
+	    	<div class="flexbox2">
+                <div class="flexitemLeft">
+                        <h2>Multi-cultural</h2>
+                        <ul>
+                            <li>Born in Seoul, South Korea</li>
+                            <li>Raised in Bangkok, Thailand</li>
+                            <li>Studying in America</li>
+                            <li>Background of international communities</li>
+                        </ul>
+                </div>
+                <div class="flexitemRight">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>Calvin College</li>
+                        <li>B.A. in Computer Science</li>
+                        <li>Social Science Group Major</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer"><i class="fa fa-chevron-down fa-3x"></i></div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+                <h1 id="skill">Skills</h1>
+                <h2>HTML</h2>
+                <div class="container3">
+                    <div class="skills html">90%</div>
+                </div>
+                <h2>CSS</h2>
+                <div class="container3">
+                    <div class="skills css">75%</div>
+                </div>
+                <h2>SQL</h2>
+                <div class="container3">
+                    <div class="skills sql">70%</div>
+                </div>
+                <h2>Bootstrap</h2>
+                <div class="container3">
+                    <div class="skills bootstrap">60%</div>
+                </div>
+                <h2>Javascript</h2>
+                <div class="container3">
+                    <div class="skills javascript">60%</div>
+                </div>
+                <h2>And More!</h2>
+                <div class="container3">
+                    <div class="skills more">200%</div>
+                </div>
+            </div>
+            <div class="footer"><i class="fa fa-chevron-down fa-3x"></i></div>
+        </div>
+
+        <div class="section" id="section4">
+            <h1>Work Experience</h1>
+                <div class="flexbox4">
+                    <div class="flexitem1">
+                            <h2>Eidex LLC</h2>
+                            <h3>Data Analyst Intern</h3>
+                            <ul>
+                                <li>Worked on the automation process of a regression test via<br> Selenium and Python</li>
+                                <li>Frequently wrote SQL scripts to streamline the QA process</li>
+                                <li>Analyzed the sources of data mistmatch</li>
+                                <li>Found and reported bugs</li>
+                            </ul>
+                    </div>
+                </div>
+            <div class="footer"><i class="fa fa-chevron-down fa-3x"></i></div>
+        </div>
+        <div class="section" id="section5">
+            <h1>Graduating in</h1>
+            <div class="container5">
+            <p id="timer"></p>
+            </div>
+            <div class="footer"><i class="fa fa-chevron-down fa-3x"></i></div>
+        </div>
+        <div class="section" id="section6">
+            <h1>Contact Me</h1>
+            <button type="button" id="resume">Click here for my Resume <br> <i class="fa fa-file"></i></button>
+            <div class="flexbox5">
+                <button type="button" id="facebook"><i class="fa fa-facebook fa-2x"></i></button>
+                <button type="button" id="linkedin"><i class="fa fa-linkedin fa-2x"></i></button>
+                <button type="button" id="github"><i class="fa fa-github fa-2x"></i></button>
+            </div>
+            <div class="flexbox5">
+                <span id="fb">Like!</span>
+                <span id="li">Connect!</span>
+                <span id="gh">Follow!</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./js/popup.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/timer.js"></script>
+</body>
+
+
+</html>
