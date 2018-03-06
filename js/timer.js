@@ -93,3 +93,26 @@ gh.click(
         window.location.href="https://github.com/yesongc";
     }
 );
+
+//link for mockups
+var mockup = $('#mockup1');
+var mobile_icon = $('#mobile');
+
+//size up if mouse hovers
+mobile_icon.hover(
+    function(){
+        mobile_icon.classList.delete("fa-4x");
+        mobile_icon.classList.add("fa-5x");
+    },
+    function(){
+        mobile_icon.classList.add("fa-5x");
+        mobile_icon.classList.delete("fa-4x");
+    }
+
+);
+
+mockup.click(
+    function(){
+        window.location.href="https://yesongc.github.io/"
+    }
+)

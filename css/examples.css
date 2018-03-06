@@ -233,11 +233,10 @@ p{
 /* Section 1
  * --------------------------------------- */
 #section1 h1{
-	color: #444;
+	color: #ffffff;
 }
 #section1 p{
-	color: #333;
-	color: rgba(0,0,0,0.3);
+	color: #ffffff;
 }
 #section1 img{
 	margin: 20px 0;

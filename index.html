@@ -21,8 +21,8 @@
             $(document).ready(function() {
                 $('#pagepiling').pagepiling({
                     menu: '#menu',
-                    anchors: ['home', 'about', 'skills', 'jobs','grad','contact'],
-                    sectionsColor: ['#C2AE95', '#A5A283', '#4A5F70', '#824E4E','#BF9076','#66777D'],
+                    anchors: ['home', 'about', 'skills', 'jobs','mockups','grad','contact'],
+                    sectionsColor: ['#9a9eab', '#6ab187', '#34675c', '#7da3a1','#73605b','#1995ad','#324851'],
                     loopTop: true,
                     loopBottom: true
                 });
@@ -34,10 +34,11 @@
 <body>
     <!-menu hanging on the top left->
 	<ul id="menu">
-		<li data-menuanchor="home" class="active"><a href="#page1">Home</a></li>
+		<li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
 		<li data-menuanchor="about"><a href="#about">About</a></li>
         <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
         <li data-menuanchor="jobs"><a href="#jobs">Work Experience</a></li>
+        <li data-menuanchor="mockups"><a href="#mockups">Mockups</a></li>
         <li data-menuanchor="grad"><a href="#grad">Graduation Timer</a></li>
         <li data-menuanchor="contact"><a href="#contact">Contact Me</a></li>
 	</ul>
@@ -121,21 +122,32 @@
             <div class="footer"><i class="fa fa-chevron-down fa-3x"></i></div>
         </div>
         <div class="section" id="section5">
+            <h1>Front-end Mockups</h1>
+	    	<div class="flexbox5">
+                <div class="flexitem1">
+                        <button type="button" id="mockup1"><i id="mobile" class="fa fa-mobile fa-4x"></i></button><br>
+                        <a href="https://yesongc.github.io/">Responsive HTML5 Mockup</a>
+                </div>
+            </div>
+
+            <div class="footer"><i class="fa fa-chevron-down fa-3x"></i></div>
+	    </div>
+        <div class="section" id="section6">
             <h1>Graduating in</h1>
-            <div class="container5">
+            <div class="container6">
             <p id="timer"></p>
             </div>
             <div class="footer"><i class="fa fa-chevron-down fa-3x"></i></div>
         </div>
-        <div class="section" id="section6">
+        <div class="section" id="section7">
             <h1>Contact Me</h1>
             <button type="button" id="resume">Click here for my Resume <br><a href="./yesongChoiResume.pdf" download> <i class="fa fa-file"></i></a></button>
-            <div class="flexbox5">
+            <div class="flexbox7">
                 <button type="button" id="facebook"><i class="fa fa-facebook fa-2x"></i></button>
                 <button type="button" id="linkedin"><i class="fa fa-linkedin fa-2x"></i></button>
                 <button type="button" id="github"><i class="fa fa-github fa-2x"></i></button>
             </div>
-            <div class="flexbox5">
+            <div class="flexbox7">
                 <span id="fb">Like!</span>
                 <span id="li">Connect!</span>
                 <span id="gh">Follow!</span>

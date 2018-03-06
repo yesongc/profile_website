@@ -13,7 +13,13 @@ div.section{
         margin-top: 1.5%;
     }
 }
-  
+
+/*homepage*/
+#section1{
+    h1{
+        color:#ffffff;
+    }
+}
 /*about page*/
 .flexbox2{
     display: flex;
@@ -138,6 +144,32 @@ div.intro{
     }
 }
 
+/*mockups page*/
+.flexbox5{
+    display: flex;
+    flex-direction:row;
+    width:100%;
+}
+
+#section5{
+    h2{
+        font-size:250%;
+        margin-bottom:3%;
+        text-align:left;
+        margin-left:33%;
+        width:100%;
+    }
+    ul{
+        padding-top:2%;
+        display: inline-block; 
+        text-align:left;
+        list-style-type: circle;
+        margin-left:33%;
+        width:100%;
+    }
+}
+
+
 #section4{
     .footer{
         margin-top:2%;
@@ -145,14 +177,14 @@ div.intro{
 }
 
 /*contact page*/
-.flexbox5{
+.flexbox7{
     display: flex;  
     flex-direction: row;
     width:100%;
     justify-content: center;
 }
 
-.flexbox5{
+.flexbox7{
     button{
         margin:0 5%;
     }
